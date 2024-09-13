@@ -1,0 +1,32 @@
+context:
+  version: 1.0.0
+  name: project-b
+
+package:
+  name: ${{ name }}
+  version: ${{ version }}
+
+source:
+  path: src
+
+build:
+  number: 0
+  noarch: generic
+
+tests:
+  - package_contents:
+      files:
+        - app-b/b.file
+
+about:
+  homepage: https://github.com/theoweiss/conda-packaging-example
+  license: MIT
+  summary: 'A conda packaging example project  ${{ name }}'
+  description: |
+    Completely useless project.
+  repository: https://github.com/theoweiss/conda-packaging-example
+  documentation: https://github.com/theoweiss/conda-packaging-example/blob/main/README.md
+
+extra:
+  recipe-maintainers:
+    - theo@m1theo.org

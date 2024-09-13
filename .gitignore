@@ -1,0 +1,6 @@
+README-artifactory.md
+**/output
+.README-artifactory.md.swp
+envs
+condarc
+projects/big/src/app-big
